@@ -1,2 +1,4 @@
-gpg --output hello_word.sh --decrypt hello_word.sh.gpg
-rm hello_word.sh.gpg
+source file_to_decrypt.sh
+
+gpg --output $FILE_TO_DECRYPT --decrypt "$FILE_TO_DECRYPT.gpg"
+rm $FILE_TO_DECRYPT.gpg

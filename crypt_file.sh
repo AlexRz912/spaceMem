@@ -1,3 +1,6 @@
-gpg -c hello_word.sh
+
+source file_to_decrypt.sh
+
+gpg -c $FILE_TO_DECRYPT
 gpgconf --kill gpg-agent
-rm hello_word.sh
+rm $FILE_TO_DECRYPT
