@@ -3,8 +3,13 @@
 Au moment de l'ouverture du fichier:
 
 Un script tourne en arrière plan pour détecter
-  1: Est-ce que des modifications ont étés apportées au fichier (vide, avec seulement l'entête expliquant comment utiliser spaceMem )? Si oui, on suppose que l'utilisateur a révisé son cours
+  1: Est-ce que des modifications ont étés apportées au fichier ?
   2: Est-ce que le fichier a été fermé ?
+
+> Choix techniques possibles:
+
+Utilisation de inotifywait -> Merci ChatGPT mais faut se renseigner un peu plus
+Utilisation de cron pour lancer une tâche automatisée ? -> Possibilitée de lancer une tâche en fonction d'autre chose que d'un horaire ?
 
 Au moment de la fermeture du fichier
 
