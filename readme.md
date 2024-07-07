@@ -1,23 +1,16 @@
-# Step 1:
+# Fonctionnalité :
 
-Ouvrir un fichier avec vscode depuis du .sh
+Au moment de l'ouverture du fichier:
 
-# Step 2:
+Un script tourne en arrière plan pour détecter
+  1: Est-ce que des modifications ont étés apportées au fichier (vide, avec seulement l'entête expliquant comment utiliser spaceMem )? Si oui, on suppose que l'utilisateur a révisé son cours
+  2: Est-ce que le fichier a été fermé ?
 
-Créer un fichier version cryptée du fichier ouvert et supprimer le premier fichier
+Au moment de la fermeture du fichier
 
-# Step 3:
+(Apprendre à détecter la fermeture d'un fichier)
+(Récupérer le nom de ce fichier et l'envoyer en tant que paramètre de lancement pour la prochaine étape)
 
-lancer l'encryption depuis un fichier externe
+Un script est lancé pour encrypter le fichier avec un mot de passe
 
-# Step 4:
-
-informer le nom du fichier à encrypter depuis un fichier externe
-
-# Step 5
-
-Attendre la fermeture d'un fichier
-
-# Step 6
-
-Récupérer le nom d'un fichier qui vient de se fermer
+Le script est envoyé dans un dossier dont la date est générée en fonction du prochain jour de révision attribué en fonction de la courbe de l'oubli

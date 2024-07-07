@@ -1,6 +1,5 @@
+#! usr/bin/bash
 
-source file_to_decrypt.sh
-
-gpg -c $FILE_TO_DECRYPT
+gpg -c $@
 gpgconf --kill gpg-agent
-rm $FILE_TO_DECRYPT
+rm $@

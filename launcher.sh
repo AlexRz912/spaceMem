@@ -1,2 +1,2 @@
 #! /usr/bin/bash
-bash crypt_file.sh
+bash crypt_file.sh hello_word.sh
